@@ -26,21 +26,53 @@ int main(void) {
 
     printf("Enter integer a: ");
     // TODO: scanf a
+    scanf("%d", &a);
     printf("Enter integer b: ");
     // TODO: scanf b
-
+    scanf("%d" , &b);
     printf("\n=== Arithmetic ===\n");
     // TODO: print +, -, *
-
+    printf("a + b = %d\n", a + b);
+    printf("a - b = %d\n", a - b);
+    printf("a * b = %d\n", a * b);
     // TODO: division + modulo only if b != 0
+    if (b != 0)
+    {
+      printf("a / b = %d\n", a / b);
+      printf("a %% b = %d\n", a % b);
+   
+    }
+    else
+    {
+      printf("Cannot divide by zero.\n");
+    }
     // else print "Cannot divide by zero."
 
     printf("\n=== Comparison ===\n");
     // TODO: compare and print
-
+    if (a > b)
+    {
+      printf("a is greater\n");
+    }
+    else if (b > a)
+    {
+      printf("b is greater\n");
+    }
+    else
+    {
+      printf("they are equal\n");
+    }
     printf("\n=== Logical checks ===\n");
     // TODO: both positive?
+    if (a > 0 && b > 0)
+    {
+      printf("Both numbers are positive\n");
+    }
     // TODO: at least one negative?
+    if (a < 0 || b < 0)
+    {
+      printf("At least one number is negtive\n");
+    }
 
     return 0;
 }
